@@ -3,7 +3,7 @@ let response=document.getElementById("response");
 function Click() {
   let answer=document.getElementById("answer");
   let answerValue;
-  answerValue=Number(answer.value); // This turns the age you input from a string to a number
+  answerValue = Number(answer.value);
   if (answerValue>=17) { // This if statement checks to see if your age is over or equal to 17
     document.getElementById("myimage").src="./images/R.png";
     response.innerHTML="You can see an R-rated movie alone";
@@ -16,8 +16,12 @@ function Click() {
     document.getElementById("myimage").src="./images/PG.png";
     response.innerHTML="You can watch a G or PG movie alone.";
   }
-  else { 
+  else if (answerValue>0){
     document.getElementById("myimage").src="./images/X.png";
     response.innerHTML="You're too young to watch most movies.";
+  }
+  else {
+    document.getElementById("myimage").src="./images/X2.png";
+    response.innerHTML="Please input your age before checking what movies you can watch.";
   }
 }

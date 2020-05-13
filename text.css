@@ -2,16 +2,15 @@ mytext {
   font-family:verdana;
   font-size:150%;
 }
-.wrapper{
+.wrapper {
   margin:auto;
   width:300px;
 }
-
-h1{
+h1 {
   font-size:35px;
   text-align:center;
 }
-hd{
+hd {
   position:absolute;
   top:60%;
   left:50%;
@@ -26,10 +25,10 @@ hr {
   border:0;
   padding:0;
 }
-.p2{
+.p2 {
   text-align:center;
   top:50px;
 }
-body{
+body {
   background-color:lightblue;
 }
